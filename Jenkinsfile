@@ -8,7 +8,7 @@ node {
        
 			
 	stage('Build') {
-		def mvn_version = 'MAVEN-HOME'
+		def mvn_version = 'MAVEN_HOME'
 		withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"]) {
 			sh 'mvn site'
 			}
